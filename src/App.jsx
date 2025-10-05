@@ -7,17 +7,15 @@ Instructions:
    cd movie-library
 2. Install dependencies:
    npm install react-router-dom
-   (TailwindCSS setup: follow Tailwind docs for Vite/CRA)
 3. Save this file as src/App.jsx (replace the existing App.jsx).
 4. Create .env in project root with:
    VITE_TMDB_API_KEY=your_tmdb_api_key_here
-   (if using CRA: REACT_APP_TMDB_API_KEY=...)
 5. Start dev server: npm run dev (Vite) or npm start (CRA)
 
 Notes on API keys and security:
 - This frontend uses TMDB (The Movie Database). The key is stored in an env variable and will be bundled into the client at build time. For production or more secure handling, put the key on a backend proxy.
 
-Features implemented in this single-file sample:
+Features implemented in this App:
 - Fetch popular movies on load from TMDB
 - Search movies by title (debounced)
 - Grid display of movies with poster & title
@@ -36,6 +34,7 @@ import Header from "./components/Header";
 import WatchlistPage from "./components/WatchlistPage";
 import MoviesGrid from "./components/MoviesGrid";
 import Home from "./components/Home";
+import Footer from "./components/Footer";
 
 const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
 console.log("TMDB Key:", import.meta.env.VITE_TMDB_API_KEY);
@@ -145,7 +144,11 @@ export default function App() {
           <Route path="/watchlist" element={<WatchlistPage watchlist={watchlist} onRemove={removeFromWatchlist} />} />
           <Route path="*" element={<div className="p-8 text-center">404 — Page not found. <Link to="/" className="text-indigo-600">Go home</Link></div>} />
         </Routes>
+
+        <Footer />
       </div>
+
+
     </Router>
   );
 }

@@ -9,7 +9,6 @@ function Header({ onSearch, searchValue }) {
                 {/* Logo / Title */}
                 <Link
                     to="/"
-                    // Added a fallback text-white here for the whole link
                     className="flex items-center gap-2 font-bold text-2xl text-white"
                 >
                     <Film className="w-7 h-7 text-white" />
@@ -39,7 +38,6 @@ function Header({ onSearch, searchValue }) {
                         aria-label="Search movies"
                         value={searchValue}
                         onChange={(e) => onSearch(e.target.value)}
-                        // Search bar input background is white, which is correct.
                         className="w-full rounded-md px-3 py-2 text-gray-800 focus:outline-none focus:ring-2 focus:ring-yellow-300 placeholder-gray-500"
                         placeholder="Search movies by title..."
                     />
