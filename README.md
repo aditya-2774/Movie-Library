@@ -1,21 +1,43 @@
-<<<<<<< HEAD
-# React + Vite
+# Movie Library App 🎬
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **React + Vite** web application to browse popular movies and manage a personal **watchlist**. Users can search for movies, add them to a watchlist, and view their saved list. Data persists on the client-side using `localStorage`.  
 
-Currently, two official plugins are available:
+The app uses **Lucide React** for sleek movie-related icons, including a custom movie reel logo.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## **Features**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Fetches popular movies from the [TMDB API](https://www.themoviedb.org/documentation/api).  
+- Search for movies by title.  
+- Display movies in a responsive grid with posters and titles.  
+- Add movies to a personal watchlist.  
+- Watchlist persists locally using `localStorage`.  
+- Remove movies from watchlist (bonus).  
+- Client-side routing for multiple views (Home & Watchlist).  
+- Clean and modern UI with **Lucide React icons**.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# Movie-Library-
-A React app to browse movies and manage a personal watchlist using TMDB API
->>>>>>> c105d8345819e41b0ba4e05f12f8c27768ab0397
+## **Tech Stack**
+
+- **Frontend:** React, Vite, React Router  
+- **Styling:** Tailwind CSS  
+- **State Management:** React hooks (`useState`, `useEffect`)  
+- **Icons:** Lucide React  
+- **API:** TMDB (The Movie Database)  
+
+---
+
+## **Screenshots**
+
+*(Add screenshots of your app here, e.g., Home and Watchlist pages)*
+
+---
+
+## **Getting Started**
+
+### **1. Clone the repo**
+```bash
+git clone https://github.com/aditya-2774/Movie-Library.git
+cd Movie-Library
