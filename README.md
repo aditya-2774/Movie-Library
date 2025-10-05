@@ -30,8 +30,9 @@ The app uses **Lucide React** for sleek movie-related icons, including a custom 
 ---
 
 ## **Screenshots**
-
-*(Add screenshots of your app here, e.g., Home and Watchlist pages)*
+<img width="1919" height="937" alt="Screenshot 2025-10-04 224807" src="https://github.com/user-attachments/assets/9e64eea6-5e83-4774-b65d-bda72117189d" />
+<img width="1918" height="933" alt="Screenshot 2025-10-04 224900" src="https://github.com/user-attachments/assets/c37c413d-21d6-4061-a4df-a87d3ece3e1c" />
+<img width="1919" height="934" alt="Screenshot 2025-10-04 224840" src="https://github.com/user-attachments/assets/864d2024-620b-4b20-9b35-c34c267e7d96" />
 
 ---
 
